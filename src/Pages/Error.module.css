@@ -1,0 +1,60 @@
+.error-container {
+    display: grid;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-primary);
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(10, 10%);
+}
+.error {
+    font-size: var(--font-size-404);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+    grid-row: 3;
+}
+.error-message {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+    grid-row: 5;
+}
+.error-message a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+.error-container a {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    grid-row: 7;
+}
+.error-container a:hover,
+.error-container a:active {
+    color: var(--color-primary-dark);
+}
+
+@media (max-width: 680px) {
+    .error {
+        font-size: 140px;
+    }
+}
+
+@media (max-width: 450px) {
+    .error {
+        font-size: var(--font-size-404-mobile);
+        margin: 0;
+    }
+    .error-message {
+        font-size: var(--font-size);
+        margin: 0;
+    }
+    .error-container a {
+        font-size: var(--font-size-smaller);
+    }
+}

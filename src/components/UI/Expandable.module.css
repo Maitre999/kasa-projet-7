@@ -1,0 +1,96 @@
+.title {
+    position: relative;
+    cursor: pointer;
+    color: var(--color-white);
+    z-index: 2;
+    margin: 0;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--color-primary);
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+.title:hover{
+    background-color: var(--color-primary-dark);
+}
+
+.title:active{
+    background-color: var(--color-primary-dark);
+    border-radius: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    transform: rotate(90deg) translate(80%, 64%);
+    z-index: 3;
+    height: 26px;
+    right: 0;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.container-expandable {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.expandable {
+    position: relative;
+    color: var(--color-primary);
+    margin-bottom: 33px;
+    top: -10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.equip-listing{
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+}
+.expandable p,
+.expandable .equip-listing{
+    list-style: none;
+    background-color: var(--color-secondary);
+    padding: 40px 20px;
+    margin: 0;
+}
+.closed{
+    height: 0;
+    transition: all 0.4s ease-in-out;
+}
+.opened{
+    transition: all 0.4s ease-in-out;
+}
+
+.closed p,
+.closed .equip-listing{
+    transform: translateY(-100%);
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.opened p,
+.opened .equip-listing{
+    transform: translateY(0);
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 13px;
+        height: 30px;
+        padding: 6px 0 0 12px;
+    }
+    .expandable {
+        font-size: var(--font-size-small);
+    }
+    .btn {
+        height: 16px;
+    }
+}

@@ -64,6 +64,13 @@
         width: 100%;
         height: var(--card-height-small);
     }
+    .btn {
+        height: 50px;
+        padding: 0 10px;
+    }
+    .arrow {
+        height: 30px;
+    }
 }
 
 @media (min-width: 1441px) {

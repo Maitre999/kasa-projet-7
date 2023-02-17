@@ -117,7 +117,7 @@ const ImageSlider = ({ images }) => {
         className={`${classes.btn} ${classes.left}`}
         onClick={handlePrevious}
       >
-        <LazyImage src={Btn} alt="Bouton gauche" />
+        <LazyImage className={classes.arrow} src={Btn} alt="Bouton gauche" />
       </button>
       <div
         className={classes["image-container"]}
@@ -132,7 +132,7 @@ const ImageSlider = ({ images }) => {
         className={`${classes.btn} ${classes.right}`}
         onClick={handleNext}
       >
-        <LazyImage src={Btn} alt="Bouton droite" />
+        <LazyImage className={classes.arrow} src={Btn} alt="Bouton droite" />
       </button>
     </div>
   );

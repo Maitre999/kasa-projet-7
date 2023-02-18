@@ -6,6 +6,9 @@
     margin-top: 20px;
     perspective: 2500px;
 }
+.slider:focus {
+    outline: none;
+}
 
 .btn {
     position: absolute;
